@@ -35,10 +35,7 @@
     <varlistentry>
      <term><parameter>callback</parameter></term>
      <listitem>
-      <para>
-       &return.callbacksort;
-      </para>
-      &callback.cmp;
+      &sort.callback.description;
      </listitem>
     </varlistentry>
    </variablelist>
@@ -184,7 +181,7 @@ $fruits[2]: lemons
 <![CDATA[
 <?php
 class TestObj {
-    private string $name;
+    public string $name;
 
     function __construct($name)
     {

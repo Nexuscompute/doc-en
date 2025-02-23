@@ -64,13 +64,21 @@
        exceptions when the <parameter>callback</parameter>
        cannot be registered.
       </para>
+      <warning>
+        <para>
+          This parameter is ignored as of PHP 8.0.0, and a notice will be
+          emitted if set to &false;. <function>spl_autoload_register</function>
+          will now always throw a <classname>TypeError</classname> on invalid
+          arguments.
+        </para>
+      </warning>
      </listitem>
     </varlistentry>
     <varlistentry>
      <term><parameter>prepend</parameter></term>
      <listitem>
       <para>
-       If true, <function>spl_autoload_register</function> will prepend
+       If &true;, <function>spl_autoload_register</function> will prepend
        the autoloader on the autoload queue instead of appending it.
       </para>
      </listitem>
